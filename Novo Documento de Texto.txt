@@ -1,1 +1,11 @@
-Na existe resposta que resolva corretamente esse exercicio, por que no enunciado diz que "cada um obteve um primeiro lugar, um segundo lugar e um terceiro lugar", vendo as probabilidades em fisica e matematica nao batem para que cada 1 tenha apenas 1 medalha de cada posiçao.
+Fisica 1°: Aristóteles
+Fisica 2°: Platão
+Fisica 3°: Sócrates
+
+Química 1°: Sócrates
+Química 2°: Aristóteles
+Química 3°: Platão
+
+Matemática 1°: Platão
+Matemática 2°: Sócrates
+Matemática 3°: Aristóteles

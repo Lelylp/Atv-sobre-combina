@@ -1,0 +1,37 @@
+var
+
+nome:caracter
+endereço:caracter
+cidade:caracter
+cpf:inteiro
+rg:inteiro
+idade:inteiro
+nome_do_pai:caracter
+nome_da_mãe:caracter
+peso:real
+renda_bruta:real
+
+inicio
+
+escreva("Digite seu nome")
+leia(nome)
+escreva("Digite seu endereço")
+leia(endereço)
+escreva("Digite sua cidade")
+leia(cidade)
+escreva("Digite seu CPF")
+leia(cpf)
+escreva("Digite seu RG")
+leia(rg)
+escreva("Digite sua idade")
+leia(idade)
+escreva("Digite o nome do seu pai")
+leia(nome_do_pai)
+escreva("Digite o nome de usa mae")
+leia(nome_da_mãe)
+escreva("Digite seu peso")
+leia(peso)
+escreva("Digite sua renda bruta")
+leia(renda_bruta)
+
+fimalgoritmo

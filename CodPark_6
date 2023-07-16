@@ -4,32 +4,36 @@ terrestre:caracter
 cabe_apenas_uma_pessoa:caracter
 pesado:caracter
 tem_pedal:caracter
+usa_capacete:caracter
 
 inicio
 
 escreva("É terrestre?")
 leia(terrestre)
-escreva("Cabe apenas uma pessoa?")
-leia(cabe_apenas_uma_pessoa)
-escreva("É pesado?")
-leia(pesado)
-escreva("Tem pedal?")
-leia(tem_pedal)
 
-se(terrestre == "Não" or cabe_apenas_uma_pessoa == "Não") entao
-
-	escreva("Nenhum veiculo compativel com a descriçao")
-
+se(terrestre == "Sim")entao
+	escreva("Cabe apenas uma pessoa?")
+	leia(cabe_apenas_uma_pessoa)
+	se(cabe_apenas_uma_pessoa == "Sim") entao
+		escreva("É pesado?")
+		leia(pesado)
+		se(pesado == "Sim)entao
+			escreva("Então, o transporte escolhido foi o trator.")
+		senao
+			escreva("Nenhum veiculo compativel com a descriçao")
+	senao
+		escreva("Tem pedal?")
+		leia(tem_pedal)
+		se(tem_pedal == "Sim")
+			escreva("Então, o transporte escolhido foi a bicicleta.")
+		senao
+			escreva("Nenhum veiculo compativel com a descriçao")
 senao
-se(pesado == "Sim")
-
-	escreva("Então, o transporte escolhido foi o trator.")
-
-senao
-se(tem_pedal == "Sim")
-
-	escreva("Então, o transporte escolhido foi a bicicleta.")
-senao
-	escreva("Então, o transporte escolhido foi a moto.")
+	escreva("Usa capacete ?")
+	leia(usa_capacete)
+	se(usa_capacete == "Sim")
+		escreva("Então, o transporte escolhido foi a moto.")
+	senao
+		escreva("Nenhum veiculo compativel com a descriçao")
 fimse
 fimalgoritmo

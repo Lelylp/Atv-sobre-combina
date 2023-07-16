@@ -9,6 +9,6 @@ escreva("Me diga um número inteiro que deseja saber a tabuada: ")
 leia(numero)
 
 para multiplicador de 1 ate 10 faca
-escreval(numero + " x " + multiplicador + " = " + numero*multiplicador
+escreval(numero." x ".multiplicador." = ".numero*multiplicador
 fimpara
 fimalgoritmo

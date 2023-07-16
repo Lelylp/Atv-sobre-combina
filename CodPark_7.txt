@@ -1,0 +1,14 @@
+var
+
+numero:inteiro
+multiplicador:inteiro
+
+inicio
+
+escreva("Me diga um número que deseje saber a tabuada:")
+leia(numero)
+
+para multiplicador de 1 ate 10 faca
+escreva(numero + " x " + multiplicador + " = " + numero*multiplicador
+fimpara
+fimalgoritmo

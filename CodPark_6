@@ -21,6 +21,7 @@ se(terrestre == "Sim")entao
 			escreva("Então, o transporte escolhido foi o trator.")
 		senao
 			escreva("Nenhum veiculo compativel com a descriçao")
+		fimse
 	senao
 		escreva("Tem pedal?")
 		leia(tem_pedal)
@@ -28,6 +29,8 @@ se(terrestre == "Sim")entao
 			escreva("Então, o transporte escolhido foi a bicicleta.")
 		senao
 			escreva("Nenhum veiculo compativel com a descriçao")
+		fimse
+	fimse
 senao
 	escreva("Usa capacete ?")
 	leia(usa_capacete)
@@ -35,5 +38,6 @@ senao
 		escreva("Então, o transporte escolhido foi a moto.")
 	senao
 		escreva("Nenhum veiculo compativel com a descriçao")
+	fimse
 fimse
 fimalgoritmo

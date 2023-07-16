@@ -1,10 +1,10 @@
 1 - será para coletar dados do usuario
 
-2 - Nome = Caracter
-    CPF = inteiro
-    RG = inteiro
-    Altura = decimal
-    Endereço = caracter
+2 - Nome:caracter
+    CPF:inteiro
+    RG:inteiro
+    Altura:real
+    Endereço:caracter
 
 3 - Nome <- "José Almeida da Silva"
     CPF <- 12345678900

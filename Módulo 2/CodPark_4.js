@@ -1,6 +1,5 @@
 var Quant_de_rodas, Peso_bruto_Kg, Quant_pessoas_veiculo;
 
-
 Quant_de_rodas = Number(window.prompt('Informe a quantidade de rodas do veiculo'));
 if (Quant_de_rodas == 0) {
   window.alert('É graça ?');

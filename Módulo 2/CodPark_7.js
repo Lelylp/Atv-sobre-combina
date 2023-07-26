@@ -6,8 +6,7 @@ while (operador != 0) {
     console.log('4: Divisão');
     console.log('0: Sair');
     operador=require('readline-sync').questionInt('Digite o número da operaçao que deseja fazer\n')
-    let resultado = calculadora(operador);
-    console.log(`Seu resultado ${resultado}\n`);
+    calculadora(operador);
 }
 
 function calculadora(operador) {
@@ -16,25 +15,25 @@ function calculadora(operador) {
         case 1:
             a=require('readline-sync').questionInt('Digite um número: ')
             b=require('readline-sync').questionInt('Digite outro número: ')
-            return a+b;
+            console.log(`Seu resultado é ${a+b}\n`);
             break;
 
         case 2:
             a=require('readline-sync').questionInt('Digite um número: ')
             b=require('readline-sync').questionInt('Digite outro número: ')
-            return a-b;
+            console.log(`Seu resultado é ${a-b}\n`);
             break;
 
         case 3:
             a=require('readline-sync').questionInt('Digite um número: ')
             b=require('readline-sync').questionInt('Digite outro número: ')
-            return a*b;
+            console.log(`Seu resultado é ${a*b}\n`);
             break;
 
         case 4:
             a=require('readline-sync').questionInt('Digite um número: ')
             b=require('readline-sync').questionInt('Digite outro número: ')
-            return a/b;
+            console.log(`Seu resultado é ${a/b}\n`);
             break;
 
         case 0:
@@ -42,7 +41,7 @@ function calculadora(operador) {
             break;
 
         default:
-            return 0;
+            console.log("Essa opção não existe\n");
             break;
     }
 }

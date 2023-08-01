@@ -2,23 +2,18 @@ function calculadora(a, b, operador) {
     switch (operador) {
         case '+':
             return a+b;
-            break;
 
         case '-':
             return a-b;
-            break;
 
         case '*':
             return a*b;
-            break;
 
         case '/':
             return a/b;
-            break;
 
         default:
             return 0;
-            break;
     }
 }
 

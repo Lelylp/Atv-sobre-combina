@@ -18,7 +18,13 @@ function buscaBinaria(array, elementoBuscado){
     return -1;
 }
 
-const listaNumeros =  [15, 8, 10, 25, 12, 30, 5, 20, 18, 7];
+function compareNumbers(a, b) {
+    return a - b;
+}
+
+let listaNumeros =  [15, 8, 10, 25, 12, 30, 5, 20, 18, 7];
+listaNumeros = listaNumeros.sort(compareNumbers);
+console.log(listaNumeros);
 const elementoProcurado = 20;
 const indiceEncontrado = buscaBinaria(listaNumeros, elementoProcurado);
 if (indiceEncontrado !== 1) {

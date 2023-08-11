@@ -1,13 +1,5 @@
-class Pessoas{
-    constructor(Nome, Idade){
-        this.Nome = Nome;
-        this.Idade = Idade;
-        this.Filho = null;
-        this.prox = null;
-    }
-}
-class PessoasComFilhos{
-    constructor(Nome, Idade, Filho){
+class Pessoa{
+    constructor(Nome, Idade, Filho = "Sem filhos"){
         this.Nome = Nome;
         this.Idade = Idade;
         this.Filho = Filho;
@@ -15,38 +7,20 @@ class PessoasComFilhos{
     }
 }
 
+
 class ListaPessoas{
     constructor(){
         this.prim = null;
     }
 
-    addFirst(Nome, Idade){
-        const newNo = new Pessoas(Nome, Idade);
+    addFirst(Nome, Idade, Filho){
+        const newNo = new Pessoa(Nome, Idade, Filho);
         newNo.prox = this.prim;
         this.prim = newNo;
     }
 
-    addFirstFilho(Nome, Idade, Filho){
-        const newNo = new PessoasComFilhos(Nome, Idade, Filho);
-        newNo.prox = this.prim;
-        this.prim = newNo;
-    }
-
-    addLast(Nome, Idade) {
-        const newNo = new Pessoas(Nome, Idade);
-        if(!this.prim){
-            this.prim = newNo
-        }else{
-            let current = this.prim;
-            while (current.prox) {
-                current = current.prox
-            }
-            current.prox = newNo
-        }
-    }
-    
-    addLastFilho(Nome, Idade, Filho) {
-        const newNo = new PessoasComFilhos(Nome, Idade, Filho);
+    addLast(Nome, Idade, Filho) {
+        const newNo = new Pessoa(Nome, Idade, Filho);
         if(!this.prim){
             this.prim = newNo
         }else{
@@ -108,5 +82,23 @@ class ListaPessoas{
         return count;
     }
 
+    listar(){
+        let current = this.prim;
+        let num = 1;
+        while(current){
+            console.log(`Pessoa n° ${num}`);
+            console.log(`Nome: ${current.Nome}`);
+            console.log(`Idade: ${current.Idade}`);
+            console.log(`Filho: ${current.Filho}`);
+            console.log();
+            current = current.prox;
+            num++;
+        }
+    }
+
 }
-//pra listar teria que ter um metodo para passar por todos os objetos e ir fazendo o console.log
+
+const lista = new ListaPessoas;
+lista.addFirst("Weslley", 12);
+lista.addLast("Rogerio", 33, ["Rebeca","Lucas"])
+lista.listar();
